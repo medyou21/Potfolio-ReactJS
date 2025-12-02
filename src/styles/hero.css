@@ -1,0 +1,10 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/images/hero-bg.jpg"); /* mets ton image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  backdrop-filter: brightness(0.7);
+}
