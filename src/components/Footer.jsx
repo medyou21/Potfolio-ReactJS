@@ -11,12 +11,33 @@ export default function Footer() {
           {/* Colonne 1 : coordonnées */}
           <div className="col-md-4 mb-3">
             <h5 className="text-uppercase">John Doe</h5>
-            <p>40 rue Laure Diebold<br/>69009 Lyon, France</p>
+            <p>40 rue Laure Diebold
+              <br/>69009 Lyon, France
+             <br/>+33 1 23 45 67 89
+            <br/>john.doe@example.com</p>
 
-            <div className="d-flex justify-content-center justify-content-md-start gap-3">
-              <a href="#" className="text-white footer-icon"><i className="bi bi-linkedin"></i></a>
-              <a href="#" className="text-white footer-icon"><i className="bi bi-github"></i></a>
-              <a href="#" className="text-white footer-icon"><i className="bi bi-twitter"></i></a>
+           <div className="d-flex gap-3 mt-2">
+              <a href="https://github.com/johndoe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4 social-icon"
+              >
+                <i className="bi bi-github"></i>
+              </a>
+              <a href="https://twitter.com/johndoe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4 social-icon"
+              >
+                <i className="bi bi-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/in/johndoe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-4 social-icon"
+              >
+                <i className="bi bi-linkedin"></i>
+              </a>
             </div>
           </div>
 
@@ -33,11 +54,14 @@ export default function Footer() {
 
           {/* Colonne 3 : réalisations */}
           <div className="col-md-4 mb-3">
-            <h5 className="text-uppercase">Dernières réalisations</h5>
+            <h5 className="text-uppercase">Mes Dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="footer-link">Projet 1</a></li>
-              <li><a href="#" className="footer-link">Projet 2</a></li>
-              <li><a href="#" className="footer-link">Projet 3</a></li>
+              <li><a href="/portfolio" className="footer-link">Fresh Food</a></li>
+              <li><a href="/portfolio" className="footer-link">Restaurant Akira</a></li>
+              <li><a href="/portfolio" className="footer-link">Espace Bien Etre</a></li>
+              <li><a href="/portfolio" className="footer-link">SEO</a></li>
+              <li><a href="/portfolio" className="footer-link">Création d'une API</a></li>
+              <li><a href="/portfolio" className="footer-link">Maquette d'un Site Web</a></li>
             </ul>
           </div>
 
