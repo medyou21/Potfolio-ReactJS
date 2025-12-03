@@ -14,7 +14,7 @@ export default function Home() {
       <Hero openGithubModal={() => setShowModal(true)} />
 
       <div className="w-100 py-5 bg-light">
-        <div className="row mx-0">
+        <div className="row g-4">
           <AboutMe />
           <Skills />
         </div>

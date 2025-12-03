@@ -1,8 +1,8 @@
 export default function AboutMe() {
   return (
-    <div className="col-md-6 mb-4">
+    <div className="col-12 col-md-6 mb-4">
       <section className="text-left">
-        <h2 className="mb-4 section-title">À propos</h2>
+        <h2 className="mb-3 section-title">À propos</h2>
         
 
         <div className="mb-3">
