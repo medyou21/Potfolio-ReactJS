@@ -18,3 +18,8 @@
 .footer-icon:hover {
   color: #0d6efd !important;
 }
+
+/* Limiter la largeur du contenu */
+footer .container {
+max-height:fit-content;      /* largeur maximale du footer */
+}

@@ -1,0 +1,32 @@
+body
+{
+    text-align: center;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  transition: all 0.3s ease; /* Animation douce au survol */
+}
+
+.card:hover {
+  background-color: #efefef; /* Couleur de fond au survol */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Légère ombre */
+  transform: translateY(-2px); /* Optionnel : effet "lift" */
+}
+
+h1 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+.btn-custom {
+  font-size: 1rem;   /* taille du texte */
+  padding: 0.15rem 20%; /* hauteur / largeur */
+    background-color: #007bff; /* Couleur de base */
+  color: white;
+  transition: background-color 0.3s ease; /* Animation douce */
+}
+.btn-custom:hover {
+  background-color: #3399ff; /* Couleur légèrement plus claire au survol */
+}

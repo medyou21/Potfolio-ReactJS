@@ -7,7 +7,7 @@ import './App.css';
 import React from "react";
 
   
-import Home from "./pages/Home";
+
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="w-100 py-4 px-3 px-md-5">
+      <main className="w-100 pt-0 px-3 px-md-5">
         <Outlet />
                
       </main>

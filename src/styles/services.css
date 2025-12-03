@@ -2,10 +2,15 @@
   font-size: 3rem;
   color: #007bff;
 }
-
+.card {
+  transition: all 0.3s ease; /* Animation douce au survol */
+}
 .card:hover {
-  transform: translateY(-5px);
+ 
   transition: 0.3s ease;
+   background-color: #efefef; /* Couleur de fond au survol */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Légère ombre */
+  transform: translateY(-2px); /* Optionnel : effet "lift" */
 }
 
 h1 {

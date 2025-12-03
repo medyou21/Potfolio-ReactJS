@@ -37,7 +37,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="w-100">
+    <div className="container-fluid p-0">
         {/* Bannière */}
     
         <img 
