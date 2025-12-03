@@ -7,7 +7,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="col-md-6 mb-4">
+    <div className="col-12 col-md-6 mb-4">
       <section>
         <h2 className="text-left mb-4 section-title">Compétences</h2>
        

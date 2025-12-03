@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/header.css";
 
 
+
+
 function Header() {
   return (
     <header>
@@ -29,7 +31,7 @@ function Header() {
               <NavLink className="nav-link" to="/">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">Services</NavLink>
+              <NavLink className="nav-link" to="/Services">Services</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
