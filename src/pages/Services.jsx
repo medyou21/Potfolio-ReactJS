@@ -48,7 +48,7 @@ export default function Services() {
         />
      <div className=" text-center mb-4 ">
       <h1 >Mon offre de Services</h1>
-        <p className="section-title">Voici les prestations sur lesquelles je peux intervenir</p>
+      <p className="service-title">Voici les prestations sur lesquelles je peux intervenir</p>
         </div>
       <div className="row g-4">
         {services.map((service, index) => (

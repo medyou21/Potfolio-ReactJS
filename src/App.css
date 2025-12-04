@@ -40,13 +40,13 @@
 .row > div {
   padding: 20px;
 }
-h2.section-title {
+.section-title {
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
 }
 
-h2.section-title::after {
+.section-title::after {
   content: "";
   display: block;
   width:300%;

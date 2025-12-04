@@ -30,3 +30,22 @@ h1 {
 .btn-custom:hover {
   background-color: #3399ff; /* Couleur légèrement plus claire au survol */
 }
+.folio-title {
+  
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+
+  
+}
+
+.folio-title::after {
+  content: "";
+  display: block;
+  width:450px;
+  height: 5px;
+  background-color: #007bff;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}

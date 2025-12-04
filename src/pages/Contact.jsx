@@ -23,80 +23,80 @@ export default function Contact() {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-1">Contact</h1>
-        <p className="section-title">Pour me contacter en vue d'un entretien ou d'une future
-             collaboration, merci de remplir le formulaire de contact.</p>
+      <h1 className="text-center">Contact</h1>
+      <p className="contact-title">Pour me contacter en vue d'un entretien ou d'une future
+        collaboration, merci de remplir le formulaire de contact.</p>
       <div
-        className="card h-100 p-4 shadow-sm"
+        className="card h-100 p-4 shadow-lg"
         style={{
           transition: "all 0.3s ease",
-          backgroundColor: "#ffffff",textAlign: "left",
+          backgroundColor: "#ffffff", textAlign: "left",
         }}
         onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f9f9f9")}
         onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#ffffff")}
-       >
-       
+      >
+
 
         <div className="row g-4">
           {/* Colonne Formulaire */}
-          
+
           <div className="col-md-6">
-             <h4 className="card-title mb-4 section-title"  >Formulaire de contact</h4>
+            <h4 className="card-title mb-4 form-title"  >Formulaire de contact</h4>
             <form onSubmit={handleSubmit}>
               <div className="mb-3 w-100">
-              
-                   <input
-                    type="text"
-                    className="form-control mb-3"
-                    id="nom"
-                    name="nom" placeholder="Votre Nom"
-                    value={formData.nom}
-                    onChange={handleChange}
-                    required
-                  />
-                
-                 
-                  <input
-                    type="email"
-                    className="form-control mb-3"
-                    id="email"
-                    name="email"
-                    placeholder="Votre adresse mail"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-              
 
-               
-                 
-                  <input
-                    type="tel"
-                    className="form-control mb-3"
-                    id="telephone"
-                    name="telephone"
-                    placeholder="Votre numéro de téléphone"
-                    value={formData.telephone}
-                    onChange={handleChange}
-                    required
-                  />
-               
-               
-                 
-                  <input
-                    type="text"
-                    className="form-control mb-3"
-                    id="sujet"
-                    name="sujet"
-                    placeholder="Sujet"
-                    value={formData.sujet}
-                    onChange={handleChange}
-                    required
-                  />
-               
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  id="nom"
+                  name="nom" placeholder="Votre Nom"
+                  value={formData.nom}
+                  onChange={handleChange}
+                  required
+                />
+
+
+                <input
+                  type="email"
+                  className="form-control mb-3"
+                  id="email"
+                  name="email"
+                  placeholder="Votre adresse mail"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+
+
+
+
+                <input
+                  type="tel"
+                  className="form-control mb-3"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Votre numéro de téléphone"
+                  value={formData.telephone}
+                  onChange={handleChange}
+                  required
+                />
+
+
+
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  id="sujet"
+                  name="sujet"
+                  placeholder="Sujet"
+                  value={formData.sujet}
+                  onChange={handleChange}
+                  required
+                />
+
 
                 <div className="col-12 mt-3">
-                
+
                   <textarea
                     className="form-control mb-3"
                     id="message"
@@ -126,11 +126,23 @@ export default function Contact() {
 
           {/* Colonne Google Map + coordonnées */}
           <div className="col-md-6">
-            <h4 className="card-title mb-4 section-title">Mes Coordonnées</h4>
+            <h4 className="card-title mb-4 form-title">Mes Coordonnées</h4>
             <h5>John Doe</h5>
-            <p className="bi bi-geo-alt-fill me-"> 40 rue Laure Diebold 69009 Lyon, France</p>
-            <p className="bi bi-telephone-fill me-2"> +33 1 23 45 67 89</p>
-            <p className="bi bi-envelope-fill me-2"> john.doe@example.com</p>
+            <p className="mb-1">
+              <i className="bi bi-geo-alt-fill me-2 fs-6"></i>
+              40 rue Laure Diebold<br />
+              69009 Lyon, France
+            </p>
+
+            <p className="mb-1">
+              <i className="bi bi-telephone-fill me-2 fs-6"></i>
+              +33 1 23 45 67 89
+            </p>
+
+            <p className="mb-1">
+              <i className="bi bi-envelope-fill me-2 fs-6"></i>
+              john.doe@example.com
+            </p>
 
             <div className="mt-3" style={{ borderRadius: "8px", overflow: "hidden" }}>
               <iframe
