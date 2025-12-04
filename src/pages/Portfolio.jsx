@@ -28,9 +28,9 @@ export default function Portfolio() {
     {
        title: "SEO",
       img: "./images/portfolio/seo.jpg",
-      desc: "Amélioration du éferencement d'un site e-commerce",
+      desc: "Amélioration du réferencement d'un site e-commerce",
       link: "https://example.com",
-      tech: "Utilisation dess outils SEO"
+      tech: "Utilisation des outils SEO"
     },
     {
        title: "Création d'une API",
@@ -60,8 +60,8 @@ export default function Portfolio() {
            style={{ objectFit: "cover", maxHeight: "380px" }} 
         />
         <div className=" text-center mb-4 ">
-      <h1 className="text-center mb-4">Mon Portfolio</h1>
-        <p className="section-title">Voici quelques unes de mes réalisations</p>
+      <h1>Mon Portfolio</h1>
+        <p className="folio-title">Voici quelques unes de mes réalisations</p>
         </div>
       <div className="row w-100 g-4">
         {projects.map((project, index) => (
@@ -72,7 +72,7 @@ export default function Portfolio() {
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text text-muted">{project.desc}</p>
-                <div className="text-center mt-3">
+                <div className="text-center mt-auto">
                 <a 
                   href={project.link} 
                   target="_blank" 
@@ -82,8 +82,8 @@ export default function Portfolio() {
                   Voir le site →
                 </a>
                 </div>
-                 <hr className="my-3" />
-                 <p className="card-text text-muted small">{project.tech}</p>
+                 <hr className="my-2" />
+                 <p className="card-text text-dark small ">{project.tech}</p>
               </div>
             </div>
           </div>

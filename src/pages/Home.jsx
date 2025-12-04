@@ -7,21 +7,26 @@ import GithubModal from "../components/GithubModal";
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
-  return (
-    
+return (
     <>
-   
       <Hero openGithubModal={() => setShowModal(true)} />
 
-      <div className="w-100 py-5 bg-light">
-        <div className="row g-4">
-          <AboutMe />
-          <Skills />
+      {/* Section avec card */}
+      <div className="container my-5">
+        <div className="card shadow-sm p-4">
+          <div className="row g-4">
+            <div className="col-12 col-lg-6">
+              <AboutMe />
+            </div>
+
+            <div className="col-12 col-lg-6">
+              <Skills />
+            </div>
+          </div>
         </div>
       </div>
 
       <GithubModal show={showModal} close={() => setShowModal(false)} />
-    
     </>
   );
 }

@@ -1,3 +1,5 @@
+import "../styles/skills.css";
+
 export default function Skills() {
   const skills = [
     { name: "React", level: 90, color: "bg-primary" },
@@ -7,9 +9,9 @@ export default function Skills() {
   ];
 
   return (
-    <div className="col-12 col-md-6 mb-4">
-      <section>
-        <h2 className="text-left mb-4 section-title">Compétences</h2>
+    <div className="col-12 col-md-6 mb-4 w-100">
+      <section className="text-start">
+        <h2 className="mb-4 skill-title">Compétences</h2>
        
         {skills.map((skill, index) => (
           <div key={index} className="mb-3">
