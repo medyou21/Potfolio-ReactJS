@@ -13,6 +13,7 @@ src/
 │ ├─ AboutMe.jsx
 │ ├─ Skills.jsx
 │ ├─ GithubModal.jsx
+│ ├─ Hero.jsx
 ├─ pages/
 │ ├─ Home.jsx
 │ ├─ Services.jsx
@@ -20,11 +21,17 @@ src/
 │ ├─ Contact.jsx
 │ ├─ Legal.jsx
 ├─ styles/
-│ ├─ App.css
+│ ├─ aboutme.css
 │ ├─ header.css
 │ ├─ card.css
 │ ├─ services.css
+│ ├─ footer.css
+│ ├─ hero.css
+│ ├─ legal.css
+│ ├─ skills.css
+│ ├─ contact.css
 ├─ App.js
+├─ App.css
 ├─ index.js
 
 
